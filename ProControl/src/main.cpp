@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#define LED D4
 
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+  Serial.println("Teste porta");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Serial.println("Teste pino da placa");
+  digitalWrite(LED, HIGH);
+  delay(500);
+  digitalWrite(LED,LOW);
+  delay(500);
 }
