@@ -26,9 +26,9 @@ void setup()
   dht.begin();
 
   pinMode(lamp1, OUTPUT);
-  digitalWrite(lamp2, LOW);
-  pinMode(lamp2, OUTPUT);
   digitalWrite(lamp1, LOW);
+  pinMode(lamp2, OUTPUT);
+  digitalWrite(lamp2, LOW);
 
   Serial.println("Sensor Teste...");
   WiFi.begin(ssid, password);
